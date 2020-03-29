@@ -1,21 +1,10 @@
-# vue-echart
+# Vue&Echarts 
 
-> A Vue.js project
+> Vue&Echarts的优化技巧
 
-## Build Setup
+- 将具有动画的部分分层
+- 修改分辨率 devicePixelRatio: 1
+- Echarts实例不要挂到data中
+- 在beforeDestroy中销毁Echarts实例和定时器
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![avatar](/static/截图.png)
