@@ -4,19 +4,20 @@
     "show": true,
     "text": "网络攻击",
     "zlevel": 50,
-    "left": "49%",
+    "left": "center",
     "padding": [
       15,
       10
     ],
     "textStyle": {
       "fontStyle": "normal",
-      "fontWeight": "bolder",
-      "fontSize": "30",
-      "lineHeight": "30",
       "textBorderColor": "#FFF",
-      "color": "#F5F5F5"
-    }
+      "color": "#F5F5F5",
+      "fontSize": 20,
+      "fontWeight":"lighter"
+    },
+    "subtext": "\n\n数据均为模式",
+    "align": "right"
   },
   "geo": {
     "left": 0,
