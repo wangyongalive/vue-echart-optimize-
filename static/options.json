@@ -14,7 +14,7 @@
       "textBorderColor": "#FFF",
       "color": "#F5F5F5",
       "fontSize": 20,
-      "fontWeight":"lighter"
+      "fontWeight": "lighter"
     },
     "subtext": "\n\n数据均为模式",
     "align": "right"

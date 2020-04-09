@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="main" ref="main">
   </div>
 </template>
 
@@ -24,7 +24,9 @@
     },
     mounted() {
       // use different zlevel for performance
+      // 地图层级置1
       option.geo.zlevel = 1;
+      //
       option.series.forEach((s, index) => {
         s.zlevel = index + 2;
         if (s.effect) {
@@ -48,7 +50,7 @@
     },
     methods: {
       draw() {
-        this.chart = echarts.init(document.getElementById('main'), null, {
+        this.chart = echarts.init(this.$refs.main, null, {
           devicePixelRatio: 1
         });
         this.chart.setOption(this.options);
@@ -58,11 +60,12 @@
         }, 5000);
       },
       getRandomData(data) {
+        // 拷贝一份
         let result = data.slice();
         return result.slice(0, Math.round(Math.random() * (data.length - 1)));
       },
       refreshData() {
-        let series = this.options.series;
+        let series = this.options.series; // series是一个对象
         series[2].data = this.getRandomData(this.data2);
         series[3].data = this.getRandomData(this.data3);
       }
